@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog Collaboratif pour Étudiants Développeurs</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers le fichier CSS -->
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="logo">DevBlog</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="publier.html">Publier un Article</a></li>
+                    <li><a href="login.html">Connexion</a></li>
+                    <li><a href="inscription.html">S'inscrire</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="articles">
+            <h1>Articles Récents</h1>
+            <!-- Exemple d'un article -->
+            <article>
+                <h2><a href="article.html">Titre de l'article #1</a></h2>
+                <p class="auteur">Publié par : Étudiant 1 - <span class="date">12 décembre 2024</span></p>
+                <p class="description">Voici un extrait de l'article. Cliquez pour lire plus...</p>
+                <a href="article.html" class="btn">Lire l'article</a>
+            </article>
+
+            <article>
+                <h2><a href="article.html">Titre de l'article #2</a></h2>
+                <p class="auteur">Publié par : Étudiant 2 - <span class="date">11 décembre 2024</span></p>
+                <p class="description">Un autre article intéressant à découvrir pour les développeurs...</p>
+                <a href="article.html" class="btn">Lire l'article</a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 DevBlog. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Publier un Article - DevBlog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="logo">DevBlog</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="login.html">Connexion</a></li>
+                    <li><a href="inscription.html">S'inscrire</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="publier">
+            <h1>Publier un Nouvel Article</h1>
+            <form action="publier_article.php" method="POST">
+                <div class="form-group">
+                    <label for="titre">Titre de l'article</label>
+                    <input type="text" id="titre" name="titre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contenu">Contenu de l'article</label>
+                    <textarea id="contenu" name="contenu" rows="10" required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Publier l'article</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 DevBlog. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Connexion - DevBlog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="logo">DevBlog</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="publier.html">Publier un Article</a></li>
+                    <li><a href="inscription.html">S'inscrire</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="connexion">
+            <h1>Connexion</h1>
+            <form action="connexion.php" method="POST">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mot_de_passe">Mot de passe</label>
+                    <input type="password" id="mot_de_passe" name="mot_de_passe" required>
+                </div>
+
+                <button type="submit" class="btn">Se connecter</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 DevBlog. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
+
